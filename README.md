@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Created a web shop using useState, useEffect, ContextApi, React-Router-Dom, CSS and Material Ui for styling.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
