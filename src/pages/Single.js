@@ -64,7 +64,7 @@ const Single = () => {
 
   return (
     <section className="single container">
-      <h2>Single product</h2>
+      <h2>Product overview</h2>
 
       <article>
         <div>
