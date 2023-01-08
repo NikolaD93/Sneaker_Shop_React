@@ -1,5 +1,7 @@
 # Created a web shop using useState, useEffect, ContextApi, React-Router-Dom, CSS and Material Ui for styling.
 # Live: https://sneakerstorenikola93.netlify.app/
+![Sneaker-Store](https://user-images.githubusercontent.com/95870159/211195437-eb3228e4-b784-43f0-8420-ac28dc09f7ad.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
