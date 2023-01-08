@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
       </article>
       <article>
-        <p>&copy; Sneaker Store 2022 </p>
+        <p>&copy; Nikola Dojcinovic 2022 </p>
       </article>
     </footer>
   );

@@ -5,6 +5,7 @@ import CartContext from "../contexts/CartContext";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Tooltip from "@mui/material/Tooltip";
 
+
 const Single = () => {
   const { products, setProducts } = useContext(ProductsContext);
   const { cart, setCart } = useContext(CartContext);

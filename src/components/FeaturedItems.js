@@ -31,8 +31,8 @@ const FeaturedItems = () => {
     <section className="featuredItems container">
       <h2>Featured items</h2>
       <Carousel
-        swipeable={false}
-        draggable={false}
+        swipeable={true}
+        draggable={true}
         showDots={false}
         responsive={responsive}
         ssr={true}
@@ -52,7 +52,7 @@ const FeaturedItems = () => {
           return (
             <div className="item" key={prod.id}>
               <Link to={`/single/${prod.id}`}>
-                <img src={prod.img} alt="" height="250px" style={{borderRadius: "5px"}} />
+                <img className="product_image" src={prod.img} alt="product_image" height="250px" style={{borderRadius: "5px"}} />
                 <h3>{prod.name}</h3>
                 <p style={{color: "#282626"}}>${prod.price}</p>
               </Link>

@@ -7,7 +7,7 @@ export const ProductsProvider = ({ children }) => {
 
 
   useEffect(() => {
-    fetch('https://my-sneakers-api.herokuapp.com/products')
+    fetch('https://zany-gray-kitten-sock.cyclic.app/products')
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

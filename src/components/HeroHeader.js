@@ -16,7 +16,7 @@ const HeroHeader = () => {
           <button><Link to="products" style={{color: 'white'}}>Order now!</Link></button>
           <button style={{marginLeft: '12px', backgroundColor: 'transparent', border: '2px solid #001253',}}><Link to="contact" style={{color: 'white'}}>Contact us</Link></button>  
         </article>
-        <img className="hero-img" src="img/header.png" alt="" />
+        <img className="hero-img" src="img/header.png" alt="sneaker_image" />
       </div>
     </header>
   );

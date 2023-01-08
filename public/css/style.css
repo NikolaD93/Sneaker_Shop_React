@@ -113,10 +113,28 @@ hr {
 /*---- NAV ----*/
 nav {
   text-align: center;
-  padding: 15px 50px;
+  padding: 15px 50px 5px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  nav {
+    padding: 20px 20px 10px 20px;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .menu-icon {
+    margin-top: -15px;
+    display: block;
+  }
 }
 
 .logo-text {
@@ -139,6 +157,14 @@ nav ul {
   justify-content: space-around;
 }
 
+
+
+@media (max-width: 767px) {
+  nav ul{
+    display: none;
+  }
+}
+
 nav ul li {
   margin-left: 30px;
   font-size: 1.3rem;
@@ -156,10 +182,6 @@ nav ul li a:hover {
 
 
 @media (max-width: 767px) {
-  nav{
-    padding: 2px 10px;
-  }
-
   .logo-text{
     font-size: 1.2rem;
   }
@@ -212,10 +234,10 @@ header article {
     width: 100%;
   }
   header .hero-img{
-    left: 25%;
+    left: 20%;
     width: 80%;
     height: 60%;
-    top: 45%;
+    top: 50%;
   }
 
   header h1 {
@@ -240,10 +262,10 @@ header h1:after {
   font-size: 2.5rem;
 }
 .featuredItems .owl-carousel .item {
-  border: 1px solid #eeeeee;
   padding: 30px;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .featuredItems .owl-carousel .item:hover {
@@ -258,6 +280,11 @@ header h1:after {
  .featuredItems h2 {
   font-size: 2.2rem;
  }
+}
+
+.featuredItems .product_image:hover{
+  transition: 0.3s ease-in-out;
+  filter: blur(3px);
 }
 
 /*---- FOOTER ----*/
@@ -310,9 +337,10 @@ footer .icons i {
 }
 footer article:last-child {
   border-top: 1px solid #f6f6f6;
-  padding: 15px 0;
+  padding: 15px 0 5px 0;
   font-size: 1.3rem;
   margin-top: -60px;
+  color: #f6f6f6;
 }
 
 @media (max-width: 767px) {
