@@ -1,6 +1,10 @@
-# Created a web shop using useState, useEffect, ContextApi, React-Router-Dom, CSS and Material Ui for styling.
-# Live: https://sneakerstorenikola93.netlify.app/
-# Video : https://youtu.be/aMVTsnFOojA
+Created a web shop using useState, useEffect, ContextApi, React-Router-Dom, CSS and Material Ui for styling.
+
+# [Live Website Preview](https://sneakerstorenikola93.netlify.app/).
+
+# [YT Video Preview](https://youtu.be/aMVTsnFOojA).
+
+
 ![Sneaker-Store](https://user-images.githubusercontent.com/95870159/211195437-eb3228e4-b784-43f0-8420-ac28dc09f7ad.png)
 
 
