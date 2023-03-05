@@ -1,4 +1,4 @@
-Created a web shop using useState, useEffect, ContextApi, React-Router-Dom, CSS and Material Ui for styling.
+Created a web shop using *useState*, *useEffect*, *ContextApi*, *React-Router-Dom*, *CSS* and *Material UI* for styling.
 
 Users should be able to:
 
