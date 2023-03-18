@@ -1,4 +1,7 @@
-Created a web shop using *useState*, *useEffect*, *ContextApi*, *React-Router-Dom*, *CSS* and *Material UI* for styling.
+## Technologies used:
+
+- `React.js` , `Css` & `MaterialUI` for frontend.
+-  Data is fetched with `API`
 
 Users should be able to:
 
