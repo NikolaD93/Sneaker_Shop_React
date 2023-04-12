@@ -13,7 +13,7 @@ export const ProductsProvider = ({ children }) => {
         setProducts(data);
       })
       .catch((err) => console.log(err));
-  }, [products]);
+  }, []);
   
   return (
     <ProductsContext.Provider value={{ products, setProducts }}>

@@ -71,6 +71,7 @@ const Cart = () => {
                       <img
                         src={item.img}
                         height="40px"
+                        width="60px"
                         alt="nike shoe"
                       ></img>
                     </td>

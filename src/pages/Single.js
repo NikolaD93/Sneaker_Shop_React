@@ -14,7 +14,7 @@ const Single = () => {
   const navigate = useNavigate();
 
   let product = products.filter((prod) => {
-    if (prod.id === params.id) {
+    if (prod.id == params.id) {
       return prod;
     }
   })[0];
@@ -34,7 +34,7 @@ const Single = () => {
     let tempIdx;
 
     let tempProd = cart.filter((item, idx) => {
-      if (item.id === params.id) {
+      if (item.id == params.id) {
         tempIdx = idx;
         return item;
       }

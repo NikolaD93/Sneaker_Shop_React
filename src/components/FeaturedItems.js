@@ -52,9 +52,16 @@ const FeaturedItems = () => {
           return (
             <div className="item" key={prod.id}>
               <Link to={`/single/${prod.id}`}>
-                <img className="product_image" src={prod.img} alt="product_image" height="250px" style={{borderRadius: "5px"}} />
+                <img
+                  className="product_image"
+                  src={prod.img}
+                  alt="product_image"
+                  height="250px"
+                  width="90%"
+                  style={{ borderRadius: "5px" }}
+                />
                 <h3>{prod.name}</h3>
-                <p style={{color: "#282626"}}>${prod.price}</p>
+                <p style={{ color: "#282626" }}>${prod.price}</p>
               </Link>
             </div>
           );
