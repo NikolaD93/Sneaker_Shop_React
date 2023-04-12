@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import { Link } from "react-router-dom";
 import ProductsContext from "../contexts/ProductsContext";
 
 const Products = () => {
-  const { products, setProducts } = useContext(ProductsContext);
+  const { products } = useContext(ProductsContext);
 
   return (
     <section className="products container">
@@ -14,7 +14,7 @@ const Products = () => {
           return (
             <div key={p.id} className="item">
               <Link to={`/single/${p.id}`}>
-                <img src={products[idx].img} alt="" />
+                <img src={products[idx].img} alt="nike shoe" />
                 <h3>{p.name}</h3>
                 <p style={{color: "#282626"}}>${p.price}</p>
               </Link>

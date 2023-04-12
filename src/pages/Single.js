@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import ProductsContext from "../contexts/ProductsContext";
 import CartContext from "../contexts/CartContext";
@@ -7,14 +7,14 @@ import Tooltip from "@mui/material/Tooltip";
 
 
 const Single = () => {
-  const { products, setProducts } = useContext(ProductsContext);
+  const { products } = useContext(ProductsContext);
   const { cart, setCart } = useContext(CartContext);
 
   const params = useParams();
   const navigate = useNavigate();
 
   let product = products.filter((prod) => {
-    if (prod.id == params.id) {
+    if (prod.id === params.id) {
       return prod;
     }
   })[0];
@@ -34,7 +34,7 @@ const Single = () => {
     let tempIdx;
 
     let tempProd = cart.filter((item, idx) => {
-      if (item.id == params.id) {
+      if (item.id === params.id) {
         tempIdx = idx;
         return item;
       }
@@ -69,7 +69,7 @@ const Single = () => {
 
       <article>
         <div>
-          <img src={product.img} alt="BootsPhoto" />
+          <img src={product.img} alt="nike shoes" />
         </div>
         <div>
           <h3>{product.name}</h3>

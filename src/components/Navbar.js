@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import CartContext from "../contexts/CartContext";
 import menu from "../assets/icon-hamburger.svg";
@@ -48,7 +48,7 @@ const Navbar = () => {
         alt="icon"
       />
 
-      <ul className={`${toggleMenu? "mobile_menu_show" : "mobile_menu_hide"}`}>
+      <ul className={`${toggleMenu ? "mobile_menu_show" : "mobile_menu_hide"}`}>
         <li>
           <Link to="/">Home</Link>
         </li>

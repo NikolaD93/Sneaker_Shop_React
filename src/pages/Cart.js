@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import CartContext from "../contexts/CartContext";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
@@ -22,7 +22,7 @@ const style = {
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
-  borderRadius: '16px'
+  borderRadius: "16px",
 };
 
 const Cart = () => {
@@ -68,7 +68,11 @@ const Cart = () => {
                   <tr key={item.id}>
                     <th scope="row">{item.id}</th>
                     <td>
-                      <img src={item.img} height="40px"></img>
+                      <img
+                        src={item.img}
+                        height="40px"
+                        alt="nike shoe"
+                      ></img>
                     </td>
                     <td>{item.name}</td>
                     <td>${item.price}</td>
@@ -109,27 +113,26 @@ const Cart = () => {
                 >
                   <PaidIcon></PaidIcon>
                 </Button>
-                
               </Tooltip>
               <Modal
-                  open={open}
-                  onClose={handleClose}
-                  aria-labelledby="modal-modal-title"
-                  aria-describedby="modal-modal-description"
-                >
-                  <Box sx={style}>
-                    <Typography
-                      id="modal-modal-title"
-                      variant="h6"
-                      component="h2"
-                    >
-                      Warning!
-                    </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                      The payment is not possible at the moment.
-                    </Typography>
-                  </Box>
-                </Modal>
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+              >
+                <Box sx={style}>
+                  <Typography
+                    id="modal-modal-title"
+                    variant="h6"
+                    component="h2"
+                  >
+                    Warning!
+                  </Typography>
+                  <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                    The payment is not possible at the moment.
+                  </Typography>
+                </Box>
+              </Modal>
             </Stack>
             <br />
           </div>
@@ -138,7 +141,11 @@ const Cart = () => {
       ) : (
         <>
           <h3 className="cart-title">The cart is empty!</h3>
-          <img className="cart-image" src="img/cart.jpg" />
+          <img
+            className="cart-image"
+            src="img/cart.jpg"
+            alt="empty cart"
+          />
         </>
       )}
     </div>
