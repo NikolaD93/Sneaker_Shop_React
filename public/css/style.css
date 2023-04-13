@@ -314,6 +314,14 @@ footer {
   clip-path: polygon(0 29%, 100% 10%, 100% 100%, 0 100%);
   padding-top: 60px;
 }
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 footer span {
   color: #c21010;
   z-index: 1;
@@ -338,12 +346,6 @@ footer a i {
 }
 footer a i:hover {
   color: #282626;
-}
-footer ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 footer .icons i {
@@ -388,7 +390,7 @@ footer article:last-child {
   object-fit: cover;
 }
 .products article .item:hover {
-  box-shadow: 1px 1px 20px #282626;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
 }
 .products article .item img {
   width: 100%;
@@ -532,6 +534,7 @@ footer article:last-child {
   height: 500px;
   border-radius: 10px;
 }
+
 .single article div:last-child {
   flex: 0 0 55%;
 }
