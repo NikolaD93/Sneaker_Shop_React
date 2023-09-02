@@ -1,6 +1,8 @@
 ## Technologies used:
 
-- `React.js` , `Css` & `MaterialUI` for frontend.
+- `React.js`
+- `Css`
+- `MaterialUI`
 -  Data is fetched with `API`
 
 Users should be able to:
